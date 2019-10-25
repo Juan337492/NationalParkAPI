@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>National Parks</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>National park search tool : </h1>
+
+            <form class="form">
+                <label for="search-term">Enter one or more state abbreviations, separated by commas: </label>
+                <input type="text" name="search-term" class="stateEntered boxShadow" required>
+                <br>
+                <br>
+                <label for="maxResults">Number of results : </label>
+                <input type="number" name="maxResults" class="js-result-amt boxShadow" value="10">
+
+                <input type="submit" value="Go!" class="boxShadow">
+            </form>
+
+            <p class="error"></p>
+
+            <section class="results hidden" role="region">
+                <h2>Search results: </h2>
+                <ul class="results-list">
+                </ul>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
